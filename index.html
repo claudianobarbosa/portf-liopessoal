@@ -3,14 +3,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Minha página</title>
       <link rel="stylesheet"   href="/index.css">
-      <style>
-       div.container{
-            border:2px solid green;
-            border radius: 10px
-            width:90%;
-            height:90%
-            blackground-color:green;
-         }
+       <style>
+            div.container{
+                blackground-color: green;
+            }
+
+            div#foto1{
+             border: 2px solid green;
+             border-radius: 10px;
+             width: 40%;
+             height: 30%;
+             justify-content: center;
+             align-items: center;
+             display: flex;
+             }
+
+             a#foto1{
+              background-image: url('./img/claudiano.jpg');
+             }
+
       </style>
 </head>
 <body>
@@ -32,13 +43,12 @@
         </nav>
 
         <header>
-            <div class="center">
-                <img src="./img/claudiano.jpg" alt="Claudiano Barbosa">
-
+            <div class="center" id="foto1">
+               <a href="img/claudiano.jpg"></a>
             </div>
 
             <h1>Claudiano Barbosa</h1>
-            <hr>
+            
             <h2>Desenvolvedor Web - FrontEnd | Html | Css | Javascript e Python
                 Tutor de Sala na Cesar School - Recife
             </h2>

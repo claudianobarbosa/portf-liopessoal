@@ -1,58 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br"><head>
+<html lang="pt-br">
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Meu Portfólio Pessoal</title>
+      <title>Projetos</title>
       <link rel="stylesheet" href="index.css">
       <style>
-        div.class center{
-          border:2px;
+        div.projeto {
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          height:200px;
+          width:400px;
+          display: inline-flex
+          align-items: center;
+          justify-content: center;
+          border:2px solid green;
+          border-radius: 10px;
+          text-align: center;
+       
+        }
+
+        div#p1{
+          background-color: aquamarine;
+        }
+
+         div#p2{
+         background-color: lightgreen;
+         
+        }
+
+         div#p3{
+          background-color: lightcoral;
+          
+        }
+
+         div#p4{
+          background-color: lightseagreen;
         }
       </style>
 </head>
 
 <body> 
-  <div class="center"><br>
-      <b>Habilidades</b>
-  </div>
-  
+   <div class="projeto" id="p1">
+       <p>
+         <b>Habilidades</b>
+       </p>
+    </div>
+   
+    <div class="projeto" id="p2">
+      <p>
+        <b>Unifavip</b>
+      </p>
+    </div>
 
-  <header>
-    <div class="center"><br>
-      <img src="img/claudiano.png">
-    </div> 
+    <div class="projeto" id="p3">
+      <p>
+         <b>Cursos</b> 
+      </p>
+    </div>
+
+    <header>
     
-     <div class="center">
-        <strong>Minhas Habilidades</strong><br><br>
-
-        <strong>Desenvolvedor Web - FrontEnd</strong><br>
-          Linguagens de marcação - Html e Css<br>
-          Linguagens de programação - Javascript e Python<br><br>
-      </div>
-
-    <div class="center">
-      <img src="img/pizzariabarbosa.png"><br><br>
-      <b>Projeto Desenvolvido no Centro Universitário Unifavip Wyden</b><br>
-         Pizzaria Barbosa - As melhores da região <br>
-         Ferramentas - Html/Css e Javascript<br><br>
-         Pizzaria Barbosa<br>
-          <strong><p><a href="https://github.com/claudianobarbosa/pizzariab">Veja aqui</a></p></strong><br>
-    </div>  
-
-    <div class="center">
-      <img src="img/analisededados2.png"><br><br>
-      <b>Manipulação de Dados em Pandas - Processo de Análise</b><br>
-      Aula prática - Colab - Python<br>
-     <strong><p><a href="https://colab.research.google.com/drive/1oOyHkE0qxV-565g00jFkIoUK64Gn2cQn#scrollTo=KN4qWZayaMld"><b>Veja aqui a análise de dados</a></strong></p><br>
-
-    </b></div><b>  
-
-     <div class="center"><br>
-
-      Acesse o Meu Portfólio<br>
-        <strong><p><a href="https://github.com/claudianobarbosa/portf-liopessoal">Clique aqui</a></p></strong>
-      </div>
-     </b>
     </header><b></b>
-</body>
+  </body>
 </html>
