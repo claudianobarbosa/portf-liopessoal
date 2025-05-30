@@ -1,9 +1,5 @@
 
-body{
-    color: black;
-    background-color:rgb(173, 156, 242);
-    font-family: Arrial Arial, Helvetica, sans-serif;
-}
+
 
 ul{
    display: flex;  
@@ -40,11 +36,6 @@ footer a {
     margin:10px;
 }
 
-
-
-Descrição{
-    color: green;
-}
 
 .container{
     padding: 0px 50px;

@@ -4,8 +4,19 @@
       <title>Minha página</title>
       <link rel="stylesheet"   href="/index.css">
        <style>
+
+             body{
+                color: black;
+                background-image: url('./img/imagem.fundo.jpg2.jpg');
+                font-family: Arrial Arial, Helvetica, sans-serif;
+             }
+            
+
             div.container{
-                blackground-color: green;
+                blackground-color: white;
+                display: inline-block;
+                border:20px;
+                border: 2px solid rgb(3, 9, 4); 
             }
 
             div#foto1{
@@ -15,13 +26,30 @@
              height: 30%;
              justify-content: center;
              align-items: center;
-             display: flex;
-             }
+             display: inline-block;         
+             display: block;
+             margin: auto;
+             background-color: green;
+
+            }
 
              a#foto1{
-              background-image: url('./img/claudiano.jpg');
+             background-image: url('./img/claudiano.jpg');
+             }
+                  
+             h1{
+                color:black;
+                text-align: center;
              }
 
+             h2{
+                border: 1px solid black; 
+             }
+
+             img{
+                display: block;
+                margin: auto;        
+             }
       </style>
 </head>
 <body>
@@ -43,9 +71,7 @@
         </nav>
 
         <header>
-            <div class="center" id="foto1">
-               <a href="img/claudiano.jpg"></a>
-            </div>
+            <img src="img/claudiano.jpg" alt="Claudiano">
 
             <h1>Claudiano Barbosa</h1>
             
