@@ -60,16 +60,6 @@ p a:hover{
 h3 a:hover{
     color: green;
 }
-faculdade{
-    color: black;
-    background-color: black;
-    font-family: Arrial Arial, Helvetica, sans-serif;
-}
-
-body p{
-    font-family: Arrial Arial, Helvetica, sans-serif;
-    margin: 5px;
-}
 
 .icone-hover {
     display: none;
@@ -85,8 +75,7 @@ body p{
         display: none;
     }
     color: black;
-
-}
+  }
 
 .projeto .div .center a:hover{
      color:green;
