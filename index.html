@@ -1,143 +1,209 @@
-<html lang="pt-br"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Minha página</title>
-      <link rel="stylesheet"   href="/index.css">
-       <style>
+<html lang="pt-br">
+   
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Minha página</title>
+         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+         rel="stylesheet"/>"  
+         <link rel="stylesheet" href="index.css">
+    </head>
+   
+           <style>
+             *{
+               margin:0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: Arial, Helvetica, sans-serif;
+          
+             }
 
              body{
-                color: black;
-                background-image: url('./img/imagem.fundo.jpg2.jpg');
-                font-family: Arrial Arial, Helvetica, sans-serif;
-                background: rgba(0, 128, 0, 0.3); 
-                text-align: center;          
-                       }
+               height: 100vh;
+               background: url("./img/imagemdefundo.1.jpg")no-repeat center /cover;
+               padding: 50px 5%;
+             }
 
-            div.container{
-                display: inline-block;
-                margin-bottom: 1px;
-                border:20px;
+             .container{
+               position: relative;
+               height: 100%;
+               background: rgb(51, 151, 94);
+               border-radius: 30px;
+             }
+
+            header{
+               position: absolute;
+               top:0;
+               left:0;
+               width: 100%;
+               padding:25px 5%;   
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               z-index: 100; 
             }
 
-            div#foto1{
-             border: 2px solid green;
-             border-radius: 10px;
-             width: 40%;
-             height: 30%;
-             justify-content: center;
-             display: inline-block;         
-             display: block;
-             margin: auto;
-             background-color: green;
+            .logo{
+               font-size: 20px;
+               color:white;
+               text-decoration: none;
+               font-weight: 500;
+               margin-left: 3px;
             }
 
-             a#foto1{
-             background-image: url('./img/claudiano.jpg');
-             }
-                  
-             h1{
-                color:black;
-                text-align: center;
-             }
+            .navbr a {
+               font-size: 18px;
+               color:white;
+               text-decoration: none;
+               font-weight: 500;
+               margin-left: 25px;
+               border-bottom: 2px solid transparent;
+               transition: .3s;
+            }
 
-             img{
-                display: block;
-                margin: auto;
-                border-radius: 40px; 
-                border: 3px solid green;      
-             }
+            .navbr a:hover,
+            .navbr a.active{
+               border-color:white;
+            }
 
-             img#claudiano{
-                  width: 10px;
-                  height: 10px;
-               }
-      </style>
-</head>
+            .sobre{
+               display: flex;
+               align-items: center;
+               height: 100%;
+               gap: 50px;
+               padding: 50px 5% 0;
+               color:white;
+            }
 
-<body>
-   <div class="container">
-       <nav>
-           <ul>
-               <li>
-                  <a href="index.html"><b>SOBRE MIM</b></a>
-               </li>
+            .sobre-detail h1{
+               font-size: 40px;
+               line-height: 1;
+               color: aliceblue;
+            }
 
-               <li>
-                  <a href="projeto.html"><b>PROJETOS</b></a>
-              </li>
-
-              <li>
-                 <a href="contatos.html"><b>CONTATOS</b></a>
-              </li>
-           </ul>
-        </nav>
-
-        <header>
-            <img src="img/claudiano.jpg" alt="Claudiano">
-
-            <h1>Claudiano Barbosa</h1>
+            .sobre-detail h2 {
+               fonte-size: 25px;
+            }
             
-            <h2>Desenvolvedor Web - Frontend | Html | Css | Javascript e Python |
-                Tutor de Sala na Cesar School - Recife.
-            </h2>
-            <hr>
-        </header>
+            .sobre-detail p {
+               margin: 10px 0 20px;
+            }
 
-        <main>
-            <section>
-                <h3>Sobre mim</h3>
-                <p>
-                    Claudiano Barbosa Silva, solteiro,nascido em 04 de Abril de 1985 na cidade de Sanharó,
-                    na região agreste de Pernambuco, a 195 quilômetros da capital, Recife PE</br> 
-                </p>
+            .sobre-detail .download-social{
+               display: flex;
+               align-items: center;
+            }
 
-                <h3>Atuação</h3> 
-                 <p>
-                    Desenvolvedor Web, trabalho com as linguagens html,css e javascript.  
-                    Atualmente, atuo como Tutor de sala na Cesar School Recife.(Centro de Estudos Avançados do Recife - Cesar).
-                    Projeto Florescendo Talentos. Programa de Cursos de Qualificação para Jovens e Adultos (Turma EJA). 
+            .btn{
+               display: inline-block;
+               padding: 10px 30px;
+               background: white;
+               border:2px solid white;
+               border-radius:40px;
+               box-shadow: 0 0 10px white;
+               font-weight: 500;
+               color:black;
+               font-weight: 500;
+
+            }
+
+            .btn:hover{
+               background:transparent;
+               box-shadow: none;
+               color:white;
+            }
+
+            .social-icons{
+               margin-left: 20px;
+               margin-top: bottom;
+
+            }
+            
+            .social-icons a{
+               display: inline-flex;
+               padding: 8px;
+               border: 2px solid white;
+               border-radius: 50%;
+               font-size: 20px;
+               color:white;
+               text-decoration: none;
+               margin: 0 6px;
+               transition: .5s;
+
+            }
+               .social-icons a:hover{
+                  background: white;
+                  box-shadow: 0 0 10px white;
+                  color:black;
+               }
+
+             .sobre-img .img-box{
+               position: relative;
+               width: 28vw;
+               height: 28vw;
+               border: 2px solid white;
+               border-radius:50%;
+               box-shadow: 0 0 20px white;
+               overflow: hidden;
+             } 
+
+             .sobre-img .img-box img{
+               position: absolute;
+               top: 1px;
+               display: block;
+               width: 100%;
+               object-fit: cover;
+
+             }
+
+          </style>
+  </head>      
+
+   <body>
+         <div class="container">
+           <header>
+              <a href="#" class="logo">Portfólio</a>
+
+              <nav class="navbr">
+                 <a href="#" class="active">Sobre</a>
+                 <a href="#" class="log">Projetos</a>
+                 <a href="#" class="log">Portfólio</a>
+                 <a href="#" class="log">Contatos</a>
+               </nav>
+            </header>
+
+            <section class="sobre">
+               <div class="sobre-detail">
+                  <h1>Claudiano Barbosa</h1>
+                  <h2>Desenvolvedor Front-End</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat illum necessitatibus sint saepe perspiciatis id eos
+                    labore provident temporibus incidunt accusantium nam repellendus
+                    corporis ipsam, inventore accusamus odit, quia alias?
                  </p>
-
-                <h3>Formação</h3>
-                 <p>
-                    <strong>Ensino Superior Completo</strong> (Análise e Desenvolvimento de Sistemas –  
-                     UNOPAR 2014 à 2016). (EAD - Pesqueira PE). 
-                     <strong>Graduando </strong> em Análise e Desenvolvimento de Sistemas - (Centro Universitário)
-                     Unifavip Wyden) - Caruaru - (Modalidade - Presencial) - (2023 à 2025).
-                </p>
-
-                  <h3>Cursos e Certificações</h3>
                
-                  <p>
-                    <b>Unifavip Wyden (04/2025)</b> -
-                     Gestão de Projetos (Even) Workshoping Unifavip Wyden -(03/2024)
-                     Desenvolvimento Rápido em Aplicações em Python, Iot,cloud e bigdata – 
-                     Programação para a internet. 
-                  </p>
-                   
-                  <p>
-                    <b>Cisco Brasil (03/2024)</b>
-                    Introdução a Ciência de Dados. 
-                  </p>
-                   
-                      <p>
-                        <b>Ocean (05/02/2023)</b>
-                        Introdução a Ciência de Dados - Mineração em Dados de Opinião em (Python). 
-                     </p>
-                   
-                   <p>
-                    <strong>Porto Digital </strong> - Armazém da Criatividade, Dotlab Brasil - Caruaru-PE 
-                     Introdução de Ciência de Dados com Python - (Python) – (16/03/2023) 
-                     Manipulação de Dados com Pandas - (Python) – (30/03/2023)  
-                     Visualização de Dados com Plotly - (Python) – (13/04/2023)  
-                  </p>
-                   
-                   <p>
-                     <strong> Megatoc Computação – (03/2013) </strong>(Windows a Office XP) (04/08/2005) Hardware (Manutenção de Micros).
-                  </p>
-              </section>
-           </main>
-    </div>    
-  
-</body>
+                  <div class="download-social">
+                     <a href="#" class="btn">Download CV</a>
+                     <div class="social-icons">
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="#"><i class="ri-whatsapp-line"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </div>
+                
+                 </div>
+              </div>
+
+              <div class="sobre-img">
+                  <div class="img-box">
+                        <img src="./img/claudiano.jpg" alt="minhafoto">
+                  </div>
+              </div>
+            </section>
+         </div>
+       
+        
+         
+       </div>  
+  </body>
 </html>
